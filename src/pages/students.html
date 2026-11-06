@@ -1,0 +1,76 @@
+<section class="page-head no-print">
+  <span class="ph-art" aria-hidden="true"><i></i><i></i><i></i><img src="/assets/img/ball-white.svg" alt="" width="200" height="200"></span>
+  <div class="wrap">
+    <p class="eyebrow on-dark">Student Development</p>
+    <h1>Student Sports Report Card</h1>
+    <p>An individual digital fitness and sports profile for every student. Adjust the inputs and watch the grade update. All data below is <b>sample data</b>.</p>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="wrap rc">
+    <div class="rc-inputs no-print">
+      <h2>Assessment Inputs</h2>
+      <p class="note">Sample student: Aarav Sharma</p>
+      <div id="sliders"></div>
+      <h3>Grading Weightage (%)</h3>
+      <p class="note">Weights are adjustable and must total 100.</p>
+      <div id="wts"></div>
+      <p class="note" id="wtotal" role="status"></p>
+      <h3>BMI</h3>
+      <div class="bmi">
+        <div><label for="ht">Height (cm)</label><input type="number" id="ht" value="150" min="80" max="220"></div>
+        <div><label for="wt">Weight (kg)</label><input type="number" id="wt" value="42" min="10" max="150"></div>
+      </div>
+      <p class="note" id="bmi"></p>
+    </div>
+
+    <article class="reportcard" id="reportcard">
+      <div class="rc-top">
+        <div class="avatar" aria-hidden="true">AS</div>
+        <dl class="meta">
+          <div><dt>Student name</dt><dd>Aarav Sharma</dd></div>
+          <div><dt>Student ID</dt><dd>GP-2026-0142</dd></div>
+          <div><dt>School</dt><dd>Sample Public School</dd></div>
+          <div><dt>Class &amp; section</dt><dd>VIII - B</dd></div>
+          <div><dt>Age</dt><dd>13</dd></div>
+          <div><dt>Primary sport</dt><dd>Football</dd></div>
+          <div><dt>Secondary sports</dt><dd>Athletics, Badminton</dd></div>
+          <div><dt>Assigned coach</dt><dd>Coach R. Verma</dd></div>
+        </dl>
+        <button class="btn btn-red btn-sm no-print" id="printBtn" type="button">{{icon:printer}} Download PDF Report</button>
+      </div>
+      <div class="scores">
+        <div><strong id="ovScore">0</strong><span>Overall score</span></div>
+        <div class="grade"><strong id="ovGrade">-</strong><span id="ovLabel">Grade</span></div>
+        <div><strong id="fitScore">0</strong><span>Fitness index</span></div>
+      </div>
+      <h3>Fitness progress</h3>
+      <div id="bars"></div>
+      <h3>Sports participation</h3>
+      <p>Training attendance 90% · Practice hours 4.5 / week · Competitions entered 6 this year · Matches played 14</p>
+      <h3>Achievement timeline</h3>
+      <ul class="timeline">
+        <li><b>Aug 2026</b> Best performer, inter-house football tournament</li>
+        <li><b>Sep 2026</b> Silver medal, 800m, inter-school athletics meet</li>
+        <li><b>Oct 2026</b> Fitness test: 12% improvement in endurance</li>
+      </ul>
+      <h3>Coach remarks</h3>
+      <p class="remarks">Aarav shows strong game sense and consistent attendance. Work on flexibility and first-touch under pressure.</p>
+      <h3>Personalised recommendations</h3>
+      <ul class="ticks" id="recs"></ul>
+      <p class="note">Grade bands: A+ Exceptional · A Excellent · B+ Very Good · B Good · C Developing · D Needs Improvement. Indicative BMI only; for students under 18, use age and sex-based BMI percentile charts and consult the school doctor.</p>
+    </article>
+  </div>
+</section>
+
+<section class="closing no-print">
+  <div class="wrap rv">
+    <h2>Want Report Cards for Your Students?</h2>
+    <p>We set up profiles, fitness tests and tracking for your whole school.</p>
+    <div class="ctas center">
+      <a class="btn btn-wa" href="{{wa|Hello Games Period, I would like student sports report cards for our school.}}" target="_blank" rel="noopener">{{icon:brand-whatsapp}} WhatsApp Us</a>
+      <a class="btn btn-ghost" href="/contact/">Partner With Us</a>
+    </div>
+  </div>
+</section>

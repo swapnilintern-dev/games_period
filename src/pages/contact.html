@@ -1,0 +1,63 @@
+<section class="page-head">
+  <span class="ph-art" aria-hidden="true"><i></i><i></i><i></i><img src="/assets/img/ball-white.svg" alt="" width="200" height="200"></span>
+  <div class="wrap">
+    <p class="eyebrow on-dark">Contact Us</p>
+    <h1>Let's Build a Stronger Sports Culture Together.</h1>
+    <p>Share a few details about your school and our partnerships team will respond within two working days.</p>
+  </div>
+</section>
+
+<section class="sec tight">
+  <div class="wrap channels">
+    <a class="channel wa" href="{{wa}}" target="_blank" rel="noopener">{{icon:brand-whatsapp}}<div><b>WhatsApp</b><span>{{site.whatsapp.display}}</span></div></a>
+    <a class="channel" href="{{tel}}">{{icon:phone}}<div><b>Call us</b><span>{{site.phone.display}}</span></div></a>
+    <a class="channel" href="{{mail}}">{{icon:mail}}<div><b>Email</b><span>{{site.email}}</span></div></a>
+    <a class="channel" href="{{gmail}}" target="_blank" rel="noopener">{{icon:brand-gmail}}<div><b>Write in Gmail</b><span>Opens a new Gmail message</span></div></a>
+    <a class="channel" href="{{site.linkedin}}" target="_blank" rel="noopener">{{icon:brand-linkedin}}<div><b>LinkedIn</b><span>Games Period</span></div></a>
+    <a class="channel" href="{{site.instagram.url}}" target="_blank" rel="noopener">{{icon:brand-instagram}}<div><b>Instagram</b><span>{{site.instagram.handle}}</span></div></a>
+  </div>
+</section>
+
+<section class="sec paper">
+  <div class="wrap contact-grid">
+    <form class="form" id="leadForm" novalidate>
+      <h2>Submit Partnership Request</h2>
+      <p class="muted">Fill this in once, then send it to us on WhatsApp or by email. Fields marked * are required.</p>
+      <div class="fields">
+        <div class="field"><label for="f1">School name *</label><input id="f1" name="school" required autocomplete="organization"><p class="err"></p></div>
+        <div class="field"><label for="f2">Principal's name</label><input id="f2" name="principal"><p class="err"></p></div>
+        <div class="field"><label for="f3">Contact person's designation *</label><input id="f3" name="designation" required autocomplete="organization-title"><p class="err"></p></div>
+        <div class="field"><label for="f4">Email address *</label><input id="f4" name="email" type="email" required autocomplete="email"><p class="err"></p></div>
+        <div class="field"><label for="f5">Phone number *</label><input id="f5" name="phone" type="tel" required autocomplete="tel"><p class="err"></p></div>
+        <div class="field"><label for="f6">City *</label><input id="f6" name="city" required autocomplete="address-level2"><p class="err"></p></div>
+        <div class="field"><label for="f7">State *</label><input id="f7" name="state" required autocomplete="address-level1"><p class="err"></p></div>
+        <div class="field"><label for="f8">Number of students</label><input id="f8" name="students" type="number" min="1" inputmode="numeric"><p class="err"></p></div>
+        <div class="field full"><label for="f9">Existing sports facilities</label>
+          <select id="f9" name="facilities"><option>Playground only</option><option>Playground and indoor hall</option><option>Limited or no facilities</option><option>Not sure</option></select></div>
+        <fieldset class="field full"><legend>Services required *</legend>
+          <div class="checks">
+            <label><input type="checkbox" name="svc" value="Event management"> Event management</label>
+            <label><input type="checkbox" name="svc" value="Equipment"> Equipment</label>
+            <label><input type="checkbox" name="svc" value="Infrastructure"> Infrastructure</label>
+            <label><input type="checkbox" name="svc" value="Coaching"> Coaching</label>
+            <label><input type="checkbox" name="svc" value="Student tracking"> Student tracking</label>
+            <label><input type="checkbox" name="svc" value="Extracurricular"> Extracurricular</label>
+          </div><p class="err" id="svcErr"></p></fieldset>
+        <div class="field full"><label for="f10">Additional requirements</label><textarea id="f10" name="notes" rows="3"></textarea></div>
+      </div>
+      <div class="send">
+        <button class="btn btn-wa" type="submit" data-via="whatsapp">{{icon:brand-whatsapp}} Send on WhatsApp</button>
+        <button class="btn btn-line" type="submit" data-via="gmail">{{icon:brand-gmail}} Send via Gmail</button>
+        <button class="btn btn-line" type="submit" data-via="email">{{icon:mail}} Send from Email App</button>
+      </div>
+      <p class="sent" id="sent" role="status" hidden>Your message is ready in the window that just opened. Press send there and it reaches us directly.</p>
+    </form>
+
+    <aside class="contact-side rv">
+      <h3>Office hours</h3>
+      <p>{{site.hours}}</p>
+      <h3>Schools, coaches and suppliers</h3>
+      <p>Partners in sports equipment, coaching and infrastructure can register interest through the same form. Select "Equipment", "Coaching" or "Infrastructure" as your service.</p>
+    </aside>
+  </div>
+</section>

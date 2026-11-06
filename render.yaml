@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: gamesperiod
+    runtime: static
+    buildCommand: node build.mjs
+    staticPublishPath: dist

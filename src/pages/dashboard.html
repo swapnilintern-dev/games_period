@@ -1,0 +1,83 @@
+<section class="page-head">
+  <span class="ph-art" aria-hidden="true"><i></i><i></i><i></i><img src="/assets/img/ball-white.svg" alt="" width="200" height="200"></span>
+  <div class="wrap">
+    <p class="eyebrow on-dark">Management Platform</p>
+    <h1>School Dashboard</h1>
+    <p>Sign in by role to see sports administration, students, coaches, equipment, infrastructure and analytics. This is a demo gate with sample data only.</p>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="wrap">
+    <div id="gate" class="gate">
+      <h2>Choose a Role to Preview</h2>
+      <p class="muted">Production sign-in will use secure authentication with role-based access.</p>
+      <div class="roles">
+        <button data-role="admin">School Admin</button>
+        <button data-role="coach">Coach</button>
+        <button data-role="student">Student</button>
+        <button data-role="parent">Parent</button>
+      </div>
+    </div>
+
+    <div id="dash" hidden>
+      <div class="who"><span>Signed in as <b id="roleName"></b> · Sample Public School</span><button class="btn btn-ghost btn-sm" id="signOut" type="button">Sign out</button></div>
+      <div class="kpis" id="kpis"></div>
+      <div class="tabs" id="tabs" role="tablist" aria-label="Dashboard sections"></div>
+
+      <div class="panel" id="p-cal"><div class="tbl"><table><thead><tr><th>Date</th><th>Event</th><th>Type</th><th>Status</th></tr></thead><tbody id="calBody"></tbody></table></div></div>
+
+      <div class="panel" id="p-stu">
+        <div class="toolbar"><input id="stuSearch" placeholder="Search by name, ID or sport" aria-label="Search students"><select id="stuSport" aria-label="Filter by sport"><option value="">All sports</option><option>Football</option><option>Basketball</option><option>Badminton</option><option>Athletics</option></select></div>
+        <div class="tbl"><table><thead><tr><th><button data-sort="name">Name</button></th><th><button data-sort="cls">Class</button></th><th><button data-sort="sport">Primary sport</button></th><th><button data-sort="score">Fitness score</button></th><th><button data-sort="att">Attendance</button></th></tr></thead><tbody id="stuBody"></tbody></table></div>
+      </div>
+
+      <div class="panel" id="p-me">
+        <div class="me">
+          <div><h3>Aarav Sharma</h3><p>VIII - B · Football · Coach R. Verma</p></div>
+          <dl><div><dt>Overall</dt><dd>73</dd></div><div><dt>Grade</dt><dd>B+</dd></div><div><dt>Attendance</dt><dd>90%</dd></div></dl>
+          <a class="btn btn-navy" href="/student-development/">Open Full Report Card {{icon:arrow-right}}</a>
+        </div>
+      </div>
+
+      <div class="panel" id="p-coach">
+        <div class="cols3">
+          <div><h3>Coach R. Verma</h3><p>Football · AIFF Level C · Assigned: 2 schools</p><p class="note">Next session: Mon 3:30 PM</p></div>
+          <div><h3>Coach S. Iyer</h3><p>Badminton · State-level player · Assigned: 1 school</p><p class="note">Next session: Tue 4:00 PM</p></div>
+          <div><h3>Coach A. Khan</h3><p>Athletics · Fitness and conditioning · Assigned: 3 schools</p><p class="note">Next session: Wed 6:30 AM</p></div>
+        </div>
+        <p class="note">Sample coach profiles. Qualifications and schedules will come from verified records.</p>
+      </div>
+
+      <div class="panel" id="p-eq">
+        <div class="toolbar"><select id="eqFilter" aria-label="Filter by status"><option value="">All statuses</option><option>Available</option><option>Damaged</option><option>Allocated</option><option>Required</option></select></div>
+        <div class="tbl"><table><thead><tr><th>Item</th><th>Sport</th><th>Total</th><th>Available</th><th>Damaged</th><th>Allocated</th><th>Status</th></tr></thead><tbody id="eqBody"></tbody></table></div>
+      </div>
+
+      <div class="panel" id="p-inf">
+        <div class="cols3">
+          <div><h3>Main playground</h3><p>Football ground · Last inspected: Oct 2026</p><span class="pill" style="--c:var(--ok)">Good</span></div>
+          <div><h3>Unused store room → Badminton court</h3><p>Conversion proposal · 2 courts possible</p><span class="pill" style="--c:var(--warn)">Planning</span></div>
+          <div><h3>Basketball court</h3><p>Resurfacing due · Next maintenance: Dec 2026</p><span class="pill" style="--c:var(--red)">Action needed</span></div>
+        </div>
+      </div>
+
+      <div class="panel" id="p-an">
+        <h3>Sport-wise participation (sample)</h3>
+        <div id="anBars"></div>
+        <p class="note">Charts are generated from the sample data in this preview.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="closing">
+  <div class="wrap rv">
+    <h2>Want This Running at Your School?</h2>
+    <p>We will walk you through the platform with your own school in mind.</p>
+    <div class="ctas center">
+      <a class="btn btn-wa" href="{{wa|Hello Games Period, I would like a walkthrough of the school dashboard.}}" target="_blank" rel="noopener">{{icon:brand-whatsapp}} Ask for a Walkthrough</a>
+      <a class="btn btn-ghost" href="/contact/">Partner With Us</a>
+    </div>
+  </div>
+</section>
